@@ -1,0 +1,24 @@
+{
+    "name": "chocofamily/phalcon-query-builder-filters",
+    "description": "A phalcon package to handle query builder filtering",
+    "type": "library",
+    "license": [
+        "BSD-3-Clause"
+    ],
+    "authors": [
+        {
+            "name": "Aidyn Makhataev",
+            "email": "aidyn@rahmetapp.kz"
+        }
+    ],
+    "require": {
+        "php": ">= 7.0.0",
+        "ext-phalcon": ">= 3.0.0",
+        "chocofamilyme/restapi-helpers": "1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chocofamily\\": "src/"
+        }
+    }
+}
