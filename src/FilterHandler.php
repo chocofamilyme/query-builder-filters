@@ -27,6 +27,10 @@ class FilterHandler
             if ($modelClass instanceof HasFilters) {
                 $filterClass = $modelClass->getFilterClassName();
 
+                if (!class_exists($filterClass)) {
+                    continue;
+                }
+
                 /** @var BaseFilter $filter */
                 $filter = new $filterClass($filters);
                 $filter->apply($builder);
