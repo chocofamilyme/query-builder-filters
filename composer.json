@@ -1,5 +1,5 @@
 {
-    "name": "chocofamily/phalcon-query-builder-filters",
+    "name": "chocofamilyme/phalcon-query-builder-filters",
     "description": "A phalcon package to handle query builder filtering",
     "type": "library",
     "license": [
