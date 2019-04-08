@@ -12,7 +12,7 @@ class FilterHandler
      * @param array $filters
      * @return Builder
      */
-    public static function handle(Builder $builder, array $filters)
+    public function handle(Builder $builder, array $filters)
     {
         $models = collect((array) $builder->getJoins())
             ->map(function ($value) {
@@ -25,7 +25,7 @@ class FilterHandler
             $modelClass = new $model;
 
             if ($modelClass instanceof HasFilters) {
-                $filterClass = $modelClass->getFilterClassName();
+                $filterClass = $modelClass->getFilterClass();
 
                 if (!class_exists($filterClass)) {
                     continue;

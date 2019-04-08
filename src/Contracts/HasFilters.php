@@ -4,5 +4,8 @@ namespace Chocofamily\QueryBuilderFilters\Contracts;
 
 interface HasFilters
 {
-    public function getFilterClassName(): string;
+    /**
+     * @return string
+     */
+    public function getFilterClass(): string;
 }

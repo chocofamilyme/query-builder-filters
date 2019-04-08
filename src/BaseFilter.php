@@ -26,6 +26,10 @@ abstract class BaseFilter
         $this->filters = $filters;
     }
 
+    /**
+     * @param Builder $builder
+     * @return Builder
+     */
     public function apply(Builder $builder)
     {
         $this->builder = $builder;
