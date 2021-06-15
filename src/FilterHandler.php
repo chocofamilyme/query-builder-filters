@@ -14,7 +14,7 @@ class FilterHandler
      */
     public function handle(Builder $builder, array $filters)
     {
-        $models = collect((array) $builder->getJoins())
+        $models = pcollect((array) $builder->getJoins())
             ->map(function ($value) {
                 return reset($value);
             })
